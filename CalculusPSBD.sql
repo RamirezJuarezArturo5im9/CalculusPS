@@ -57,7 +57,8 @@ idUsuariof int not null,
 foreign key (idTipoProy)references TipoProyecto(idTipoPro) on update cascade on delete cascade,
 foreign key (idUsuariof)references Usuario(idUsuario) on update cascade on delete cascade,
 foreign key (idubicacionf)references Ubicacion(idUbicacion) on update cascade on delete cascade,
-foreign key (idArq)references Arquitecto(idArquitecto) on update cascade on delete cascade
+foreign key (idArq)references Arquitecto(idArquitecto) on update cascade on delete cascade,
+foreign key (idEmpre)references Empresa(idEmpresa) on update cascade on delete cascade
 );
 
 select * from Proyecto;
