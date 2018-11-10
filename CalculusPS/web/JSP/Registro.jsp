@@ -6,29 +6,124 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Styles2.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div style=" position: static; left: 50%; text-align: center">
-            <form action="Registro" method="Post">
-            <h1>Registro de Usuario</h1><br><br>
-            
-                <p>Nombre</p><input type="text" name="Nom"><br><br>
-                <p>Apellido Paterno</p><input type="text" name="Ap"><br><br>
-                <p>Apellido Materno</p><input type="text" name="Am"><br><br>
-                <p>Telefono</p><input type="text" name="Tel"><br><br>
-                <p>Correo</p><input type="text" name="Cor"><br><br>
-                <p>Usuario</p><input type="text" name="Usu"><br><br>
-                <p>Contraseña</p><input type="text" name="Con"><br><br>
+<html lang="en" >
 
-                <input type="submit" name="Ok" value="Aceptar"><br><br>
-            </form>
-            <input type="submit" name="Volver" value="Volver" onclick="window.location.href='index.html'"><br><br>
+<head>
+  <meta charset="UTF-8">
+  <title>CalculusPS-SignUp</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="../CSS/Registro.css">
+
+  
+</head>
+
+<body>
+
+  
+<!-- .h3 Comienza tu prueba gratuita de 30 días ya mismo-->
+<!-- p o puedes comprar tu plan en Softlife ahora mismo-->
+<div class="container">
+    <h1>Sign Up</h1>
+    <form action="/CalculusPS/ServeltRegistro" method="post">
+    <div class="row">
+      <h4>Datos Personales</h4>
+        
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="Nombre"/>
+            <div class="input-icon"><i class="fa fa-user"></i></div>
         </div>
-    </body>
+        
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="Apellido Paterno"/>
+            <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="Apellido Paterno"/>
+            <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        
+        <div class="input-group input-group-icon">
+            <input type="text" placeholder="Username"/>
+            <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+        
+        <div class="input-group input-group-icon">
+            <input type="email" placeholder="Correo electrónico"/>
+            <div class="input-icon"><i class="fa fa-envelope"></i></div>
+        </div>
+     
+        <div class="input-group input-group-icon">
+            <input type="password" placeholder="Contraseña"/>
+            <div class="input-icon"><i class="fa fa-key"></i></div>
+        </div>
+        
+        <div class="input-group input-group-icon">
+            <input type="password" placeholder="Repetir Contraseña"/>
+            <div class="input-icon"><i class="fa fa-key"></i></div>
+        </div>
+        
+    </div>
+        
+    <div class="row">
+      
+        <div class="col-half">
+            <h4>Edad</h4>
+            <div class="input-group">
+            <div class="col-third">
+                <input type="text" placeholder="Edad"/>
+            </div>
+            </div>
+        </div>
+        
+      <div class="col-half">
+        <h4>Género</h4>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="gender-male"/>
+          <label for="gender-male">Hombre</label>
+          <input type="radio" name="gender" value="female" id="gender-female"/>
+          <label for="gender-female">Mujer</label>
+        </div>
+      </div>
+    </div>
+        
+    <div class="row">
+        <h3>Datos Laborales</h3>
+        <div class="col-half">
+            <h4>Carrera</h4>
+            <div class="input-group">
+            <div class="col-third">
+                <input type="text" placeholder="Carrera"/>
+            </div>
+            </div>
+        </div>
+        
+      <div class="col-half">
+            <h4>Puesto</h4>
+            <div class="input-group">
+            <div class="col-third">
+                <input type="text" placeholder="Puesto"/>
+            </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row">
+      <div class="input-group">
+             
+        <input type="submit" value="Aceptar Datos"/>
+      </div>
+    </div>
+  </form>
+</div>
+  <script src='http://misoftlife.com/wp-content/formulario_trial/jquery.min.js'></script>
+
+  
+
+</body>
+
 </html>

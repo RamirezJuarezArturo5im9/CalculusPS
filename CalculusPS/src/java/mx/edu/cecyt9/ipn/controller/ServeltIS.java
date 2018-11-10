@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author karol
  */
-public class ServletInicioSesión extends HttpServlet {
+public class ServeltIS extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,10 +35,10 @@ public class ServletInicioSesión extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletInicioSesión</title>");            
+            out.println("<title>Servlet ServeltIS</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ServletInicioSesión at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ServeltIS at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -70,7 +70,7 @@ public class ServletInicioSesión extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       response.sendRedirect("JSP/MenuIng.jsp");
     }
 
     /**
