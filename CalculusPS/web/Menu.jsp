@@ -25,7 +25,7 @@
   <nav class="nav nav--left">
   <ul>
     <li>
-        <a href="JSP/Calculos/CalculosIndex.jsp"><span>Cálculos</span></a>
+        <a href="JSP/Calculos/GenerarCalculos.jsp"><span>CÃ¡lculos</span></a>
     </li>
     <li>
       <a href="JSP/Simulacion/SimulacionIndex.jsp"><span>Simulaciones</span></a>
