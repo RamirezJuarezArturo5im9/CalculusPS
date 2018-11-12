@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
   
-    <link rel="stylesheet" href="CSS/Menu.css">
+    <link rel="stylesheet" href="../CSS/Menu.css">
 
   
 </head>
@@ -25,25 +25,28 @@
   <nav class="nav nav--left">
   <ul>
     <li>
-        <a href="JSP/Calculos/GenerarCalculos.jsp"><span>Cálculos</span></a>
+        <a href="../JSP/Calculos/GenerarCalculos.jsp"><span>Cálculos</span></a>
     </li>
     <li>
-      <a href="JSP/Simulacion/SimulacionIndex.jsp"><span>Simulaciones</span></a>
+      <a href="../JSP/Simulacion/SimulacionIndex.jsp"><span>Simulaciones</span></a>
+    </li>
+    <li>
+      <a href="../JSP/Proyectos/ProyectosIndex.jsp"><span>Proyectos</span></a>
     </li>
   </ul>
 </nav>
 
 <figure class="logo">
-  <img src="images/Logo.png">
+  <img src="../images/Logo.png">
 </figure>
 
 <nav class="nav nav--right">
   <ul>
     <li>
-        <a href="Index.jsp" ><span>Sign in</span></a>
+        <a href="../Index.jsp" ><span>Sign out</span></a>
     </li>
     <li>
-        <a href="JSP/Registro.jsp" ><span>Sign up</span></a>
+        <span style="color: white">Bienvenido "Nombre del Usuario"</span>
     </li>
   </ul>
 </nav>
@@ -54,7 +57,7 @@
   <div class="slide js-slide">
     <div class="slide__content">
       <figure class="slide__img js-slide__img">
-          <img src="images/Building1.jpg">
+          <img src="../images/Building1.jpg">
       </figure>
        <figure class="slide__img js-slide__img">
            <img src="https://artelista.s3.amazonaws.com/obras/big/6/5/1/4001884722198228.jpg">
@@ -127,7 +130,7 @@
 
   
 
-    <script  src="JS/Menu.js"></script>
+    <script  src="../JS/Menu.js"></script>
 
 
 
