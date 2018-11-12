@@ -17,7 +17,7 @@
         <h2>V = Velocidad del agua</h2>
         <h2>Q = Gasto</h2>
         <h2>A = Área hidráulica</h2>
-        <form action="../../ServletVelocidad">
+        <form action="/CalculusPS/ServletVelocidad">
             Q = <input type="text" name="Gasto">
             A = <input type="text" name="Area">
             <input type="submit" value="Calcular">
