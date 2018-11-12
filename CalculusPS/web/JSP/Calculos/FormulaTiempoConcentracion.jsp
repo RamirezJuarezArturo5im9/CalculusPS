@@ -48,22 +48,31 @@
 
     <div id="sidebar">
 
-        <h3 style="color: white">F贸rmulas</h3>
+        <h3 style="color: white">F髍mulas</h3>
       <ul class="nav navbar-nav side-bar">
-          <li class="side-bar tmargin"><a href="FormulaGasto.jsp"><span class="glyphicon glyphicon-list">&nbsp;</span>Gasto</a></li>
-          <li class="side-bar"><a href="FormulaVelocidad.jsp"><span class="glyphicon glyphicon-flag">&nbsp;</span>Velocidad</a></li>
-        <li class="side-bar">
-            <a href="FormulaTiempoConcentracion.jsp"><span class="glyphicon glyphicon-certificate">&nbsp;</span>Tiempo de Concentracion</a></li>
+           <li class="side-bar tmargin"><a href="FormulaGasto.jsp"></span>Gasto</a></li>
+          <li class="side-bar"><a href="FormulaVelocidad.jsp"></span>Velocidad</a></li>
+          <li class="side-bar">
+            <a href="FormulaTiempoConcentracion.jsp">Tiempo de Concentracion</a></li>
+          <li class="side-bar tmargin"><a href="FormulaEF.jsp">Eficiencia de frente</a></li>
+          <li class="side-bar"><a href="FormulaEL.jsp">Eficiencia de lado</a></li>
+          <li class="side-bar"><a href="FormulaQI.jsp">Gasto interceptado</a></li>
+          <li class="side-bar">
+              <a href="FormulaRF.jsp">Intercepci髇 de frente</a></li>
+          <li class="side-bar tmargin"><a href="FormulaRS.jsp">Intercepci髇 de lado</a></li>
+          <li class="side-bar"><a href="FormulaTC.jsp">Tiempo de Concentraci髇</a></li>
+          <li class="side-bar">
+              <a href="FormulaVC.jsp">Velocidad de choque</a></li>
       </ul>
     </div>
   </div>
   <div class="col-md-9 animated bounce">
-      <h1 style="color: #cccccc">F贸rmula del tiempo de concentraci贸n</h1>
+      <h1 style="color: #cccccc">Formula del tiempo de concentracion</h1>
     <hr style="height: 3px; background-color: white">
     
     <h3 style="color: white">t<sub>c</sub> = 0.000325 (L<sup>0.77</sup>/S<sup>0.385</sup>)</h3>
-        <h3 style="color: white">t<sub>c</sub> = Tiempo de concentraci贸n</h3>
-        <h3 style="color: white">L = Longitud del 谩rea de captaci贸n</h3>
+        <h3 style="color: white">t<sub>c</sub> = Tiempo de concentracion</h3>
+        <h3 style="color: white">L = Longitud del Area de captacion</h3>
         <h3 style="color: white">S = Pendiente media</h3>
         <form action="/CalculusPS/ServletTiempoConcentracion">
             <p style="color: white">L = <input type="text" name="Longitud" placeholder="Longitud" class="form-control" style="width: 25%">

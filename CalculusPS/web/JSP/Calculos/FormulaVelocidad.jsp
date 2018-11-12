@@ -9,7 +9,7 @@
 <html>
     <head>
   <meta charset="UTF-8">
-  <title>Proyectos-Menu</title>
+  <title>Formula Velocidad</title>
   
   
   <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
@@ -48,25 +48,34 @@
 
     <div id="sidebar">
 
-        <h3 style="color: white">F√≥rmulas</h3>
+        <h3 style="color: white">FÛrmulas</h3>
       <ul class="nav navbar-nav side-bar">
-          <li class="side-bar tmargin"><a href="FormulaGasto.jsp"><span class="glyphicon glyphicon-list">&nbsp;</span>Gasto</a></li>
-          <li class="side-bar"><a href="FormulaVelocidad.jsp"><span class="glyphicon glyphicon-flag">&nbsp;</span>Velocidad</a></li>
-        <li class="side-bar">
-            <a href="FormulaTiempoConcentracion.jsp"><span class="glyphicon glyphicon-certificate">&nbsp;</span>Tiempo de Concentracion</a></li>
+           <li class="side-bar tmargin"><a href="FormulaGasto.jsp"></span>Gasto</a></li>
+          <li class="side-bar"><a href="FormulaVelocidad.jsp"></span>Velocidad</a></li>
+          <li class="side-bar">
+            <a href="FormulaTiempoConcentracion.jsp">Tiempo de Concentracion</a></li>
+          <li class="side-bar tmargin"><a href="FormulaEF.jsp">Eficiencia de frente</a></li>
+          <li class="side-bar"><a href="FormulaEL.jsp">Eficiencia de lado</a></li>
+          <li class="side-bar"><a href="FormulaQI.jsp">Gasto interceptado</a></li>
+          <li class="side-bar">
+              <a href="FormulaRF.jsp">IntercepciÛn de frente</a></li>
+          <li class="side-bar tmargin"><a href="FormulaRS.jsp">IntercepciÛn de lado</a></li>
+          <li class="side-bar"><a href="FormulaTC.jsp">Tiempo de ConcentraciÛn</a></li>
+          <li class="side-bar">
+              <a href="FormulaVC.jsp">Velocidad de choque</a></li>
       </ul>
     </div>
   </div>
   <div class="col-md-9 animated bounce">
-      <h1 style="color: #cccccc">F√≥rmula de la Velocidad del Agua</h1>
+      <h1 style="color: #cccccc">Formula de la Velocidad del Agua</h1>
     <hr style="height: 3px; background-color: white">
     
     <h3 style="color: white">V = Q/A</h3>
         <h3 style="color: white">V = Velocidad del agua</h3>
         <h3 style="color: white">Q = Gasto</h3>
-        <h3 style="color: white">A = √Årea hidraulica</h3>
+        <h3 style="color: white">A = Area hidraulica</h3>
         <form action="/CalculusPS/ServletVelocidad">
-            Q = <input type="text" name="Gasto" placeholder="Gasto" class="form-control" style="width: 25%">
+            <p style="color: white">Q = <input type="text" name="Gasto" placeholder="Gasto" class="form-control" style="width: 25%">
             A = <input type="text" name="Area" placeholder="Area" class="form-control" style="width: 25%"></p>
             <input type="submit" value="Calcular" class="btn btn-default">
         </form>
