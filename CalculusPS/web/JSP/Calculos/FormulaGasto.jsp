@@ -17,7 +17,7 @@
         <h2>Q = Gasto</h2>
         <h2>C = Coeficiente de escurrimiento</h2>
         <h2>I = Intensidad media de la lluvia</h2>
-        <h2>A = Área de la zona)</h2>
+        <h2>A = Área de la zona</h2>
         <form action="/CalculusPS/ServletGasto">
             C = <input type="text" name="Escurrimiento">
             I = <input type="text" name="Intensidad">
