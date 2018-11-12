@@ -17,7 +17,7 @@
         <h2>t<sub>c</sub> = Tiempo de concentración</h2>
         <h2>L = Longitud del área de captación</h2>
         <h2>S = Pendiente media</h2>
-        <form action="../../ServletTiempoConcentracion">
+        <form action="/CalculusPS/ServletTiempoConcentracion">
             L = <input type="text" name="Longitud">
             S = <input type="text" name="Pendiente">
             <input type="submit" value="Calcular">
