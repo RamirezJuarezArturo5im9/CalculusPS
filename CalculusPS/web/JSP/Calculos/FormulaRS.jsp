@@ -18,7 +18,7 @@
         <h2>V = Velocidad de llegada</h2>
         <h2>Sx = Bombeo de vialidad</h2>
         <h2>L = Longitud</h2>
-        <form action="/CalculusPS/ServletGasto">
+        <form action="/CalculusPS/ServletRS">
             V = <input type="text" name="Velocidad">
             Sx = <input type="text" name="Bombeo">
             L = <input type="text" name="Longitud">
