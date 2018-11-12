@@ -5,7 +5,8 @@
  */
 package mx.edu.cecyt9.ipn.controller;
 
-import com.mysql.jdbc.Statement;
+import java.sql.*;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
