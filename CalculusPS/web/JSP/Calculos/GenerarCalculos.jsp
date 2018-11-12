@@ -13,5 +13,8 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <a href="FormulaGasto.jsp">Gasto</a>
+        <a href="FormulaTiempoConcentracion.jsp">Tiempo de Concentración</a>
+        <a href="FormulaVelocidad.jsp">Velocidad</a>
     </body>
 </html>
