@@ -5,18 +5,22 @@
  */
 package mx.edu.cecyt9.ipn.controller;
 
+import com.mysql.jdbc.Statement;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import mx.edu.cecyt9.ipn.util.ConexiónBD;
 
 /**
  *
- * @author karol
+ * @author ryuza
  */
-public class ServletAgreArqPro extends HttpServlet {
+@WebServlet(name = "NuevoProyecto", urlPatterns = {"/NuevoProyecto"})
+public class GenerarProyecto extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,10 +39,10 @@ public class ServletAgreArqPro extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletAgreArqPro</title>");            
+            out.println("<title>Servlet GenerarProyecto</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ServletAgreArqPro at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet GenerarProyecto at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -71,8 +75,45 @@ public class ServletAgreArqPro extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        
+        String NomP;
+        String Descrip;
+        String FechIn;
+        String FechEn;
+        String PaisP;
+        String CiuP;
+        String Municip;
+        String Colon;
+        String CalleP;
+        String Coord;
+        
+        
+        NomP = request.getParameter("NombreP");
+        Descrip = request.getParameter("Descripcion");
+        FechIn = request.getParameter("FechaIn");
+        FechEn = request.getParameter("FechaEn");
+        PaisP = request.getParameter("Pais");
+        CiuP = request.getParameter("Ciudad");
+        Municip = request.getParameter("Municipio");
+        Colon = request.getParameter("Colonia");
+        CalleP = request.getParameter("Calle");
+        Coord = request.getParameter("Coordenadas");
+        
+        try {
+            String query = "insert into Proyecto values ('null','"+NomP+"','"+Descrip+"','"+FechIn+"','"+FechEn+"','null','"+CalleP+"','"+Colon+"','"+Municip+"','"+PaisP+"','"+Coord+"')";
+            Statement preparedStmt = ConexiónBD.obtener().createStatement();
+            preparedStmt.executeUpdate(query);
+            ConexiónBD.cerrar();
+            System.out.println("<script>alert('Registrado con exito');</script>");
+            System.out.println("<script>window.history.back();</script>");
+        }catch (Exception e) 
+        {
+            System.err.println("Got an exception!");
+            System.err.println(e.getMessage());
+        }
     }
-
+        
     /**
      * Returns a short description of the servlet.
      *
