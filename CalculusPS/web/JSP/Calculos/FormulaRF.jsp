@@ -16,7 +16,7 @@
         <h1>Rf = 1 - 0.295(V-Vc)</h1>
         <h2>V = Velocidad de llegada</h2>
         <h2>Vc = Velocidad de choque</h2>
-        <form action="/CalculusPS/ServletGasto">
+        <form action="/CalculusPS/ServletRF">
             V = <input type="text" name="Llegada">
             Vc = <input type="text" name="Choque">
             <input type="submit" value="Calcular">
