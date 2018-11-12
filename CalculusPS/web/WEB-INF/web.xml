@@ -17,8 +17,8 @@
         <servlet-class>mx.edu.cecyt9.ipn.controller.ServletIS</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ServletAgreArqPro</servlet-name>
-        <servlet-class>mx.edu.cecyt9.ipn.controller.ServletAgreArqPro</servlet-class>
+        <servlet-name>ServletGenerarProyecto</servlet-name>
+        <servlet-class>mx.edu.cecyt9.ipn.controller.ServletGenerarProyecto</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ServletConsultaPro</servlet-name>
@@ -57,8 +57,8 @@
         <url-pattern>/ServletInicioSesi_n</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ServletAgreArqPro</servlet-name>
-        <url-pattern>/ServletAgreArqPro</url-pattern>
+        <servlet-name>ServletGenerarProyecto</servlet-name>
+        <url-pattern>/ServletGenerarProyecto</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletConsultaPro</servlet-name>

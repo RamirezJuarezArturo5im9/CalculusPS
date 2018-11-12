@@ -20,7 +20,7 @@ import mx.edu.cecyt9.ipn.util.ConexiónBD;
  * @author ryuza
  */
 @WebServlet(name = "NuevoProyecto", urlPatterns = {"/NuevoProyecto"})
-public class GenerarProyecto extends HttpServlet {
+public class ServletGenerarProyecto extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
