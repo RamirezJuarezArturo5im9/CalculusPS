@@ -40,11 +40,11 @@ public class ServletRF extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Resultado TC</title>");            
+            out.println("<title>Resultado RF</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Tiempo de concentración<h1>");
-            out.println("<h1>t<sub>c</sub> = 0.000325 (L<sup>0.77</sup>/S<sup>0.385</sup>)</h1>");
+            out.println("<h1>Interecepción de frente<h1>");
+            out.println("<h1>Rf = 1 - 0.295(V-Vc)</h1>");
             out.println("<h3>V(Velocidad de llegada) = " + V + "</h3>");
             out.println("<h3>Vc(Velocidad de choque) = " + Vc + "</h3>");
             out.println("<h3>Rf(Intercepción de frente) = " + Rf + "</h3>");
