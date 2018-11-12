@@ -34,8 +34,8 @@ public class Formulas {
         return Rf;
     }
     
-    public double CalcularRs(double V, double Sx, double L, double Q) {
-        Rs = Math.pow(1+(0.0828*Math.pow(V, 1.8)/(Sx*Math.pow(L, 2.3))) , Q);
+    public double CalcularRs(double V, double Sx, double L) {
+        Rs = Math.pow(1+(0.0828*Math.pow(V, 1.8)/(Sx*Math.pow(L, 2.3))), -1);
         return Rs;
     }
     
@@ -45,7 +45,7 @@ public class Formulas {
     }
 
     public double CalcularQi(double Qd, double Rf, double Ef, double Rs, double El) {
-        Qi = Qd*((Rf+Ef)*(Rs+El));
+        Qi = Qd*((Rf*Ef)+(Rs*El));
         return Qi;
     }
 }
